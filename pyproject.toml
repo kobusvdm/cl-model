@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "table-42"
+version = "0.1.0"
+description = ""
+authors = ["Kobus van der Merwe <kobusvdm@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+chainladder = "*"
+pandas = "*"
+jupyterlab = "*"
+ipyparallel = "*"
+scikit-learn = "*"
+jupyterlab-lsp = "*"
+jupyter-lsp = "*"
+numpy = "<2"
+python-lsp-server = "*"
+azure-storage-blob = "*"
+azure-identity = "*"
+pydantic = "*"
+prefect = {version = "^3.0.0rc20", allow-prereleases = true}
+prefect-azure = {version = "^0.4.0rc2", allow-prereleases = true}
+prefect-aws = {version = "^0.5.0rc2", allow-prereleases = true}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
